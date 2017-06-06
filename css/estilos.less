@@ -1,4 +1,5 @@
 @cor-padrao: tomato;
+@cor-auxiliar: #1e2c35;
 @cor-branca: #fff;
 
 /** Geral **/
@@ -31,7 +32,7 @@ h2 {
 /** Header **/
 header {
   border-top: 5px solid @cor-padrao;
-  background: rgba(30, 44, 53, 0.8);
+  background: fade(@cor-auxiliar, 80);
   height: 90px;
   width: 100%;
   position: absolute;
@@ -162,7 +163,7 @@ header .container {
 
 /** Planos **/
 .planos {
-  background: #1e2c35;
+  background: @cor-auxiliar;
 }
 
 .planos h2 {
@@ -347,7 +348,7 @@ footer::after {
 
 footer::before {
   content: "";
-  background: #1e2c35;
+  background: @cor-auxiliar;
   top: 0;
   left: 0;
   bottom: 0;
