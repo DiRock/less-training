@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.9.1",
     "less": "^2.7.2"
   },
   "scripts": {
