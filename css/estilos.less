@@ -2,6 +2,7 @@
 @cor-padrao: tomato;
 @cor-auxiliar: #1e2c35;
 @cor-branca: #fff;
+@fonte-botao: 1.2em;
 
 //Mixins
 .borda-curvada(@raio-borda: 1em){
@@ -19,6 +20,10 @@
   text-indent: -9999px;
   overflow: hidden;
   background-repeat: no-repeat;
+}
+
+.imagem-fundo(@url){
+  background-image: url(@url);
 }
 
 /** Geral **/
@@ -65,7 +70,7 @@ header .container {
   position: absolute;
   right: 0;
   top: -.5em;
-  font-size: 1.2em;
+  font-size: @fonte-botao;
   font-weight: lighter;
 }
 
@@ -117,7 +122,7 @@ header .container {
   background: @cor-padrao;
   border: 0;
   padding: .6em;
-  font-size: 1.2em;
+  font-size: @fonte-botao;
   .borda-curvada(2.5em);
   .sombreamento;
   font-weight: bold;
@@ -247,7 +252,7 @@ header .container {
   color: @cor-branca;
   width: 210px;
   height: 38px;
-  font-size: 1.2em;
+  font-size: @fonte-botao;
   .borda-curvada();
   .sombreamento;
   margin-left: 2em;
@@ -343,7 +348,7 @@ textarea {
   color: @cor-branca;
   width: 210px;
   height: 38px;
-  font-size: 1.2em;
+  font-size: @fonte-botao;
   .borda-curvada();
   .sombreamento;
 }
@@ -435,13 +440,13 @@ footer a {
 }
 
 .social a[href*="facebook"] {
-  background-image: url(../imagens/facebook.png);
+  .imagem-fundo(../imagens/facebook.png);
 }
 
 .social a[href*="twitter"] {
-  background-image: url(../imagens/twitter.png);
+  .imagem-fundo(../imagens/twitter.png);
 }
 
 .social a[href*="instagram"] {
-  background-image: url(../imagens/instagram.png);
+  .imagem-fundo(../imagens/instagram.png);
 }
