@@ -1,0 +1,21 @@
+//Mixins
+.borda-curvada(@raio-borda: 1em){
+  -webkit-border-radius: @raio-borda;
+  -o-border-radius: @raio-borda;
+  -moz-border-radius: @raio-borda;
+  border-radius: @raio-borda;
+}
+
+.sombreamento(){
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.8);
+}
+
+.image-replacement(){
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.imagem-fundo(@url){
+  background-image: url(@url);
+}

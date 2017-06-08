@@ -2,7 +2,7 @@ var gulp = require("gulp"),
 	less = require("gulp-less");
 
 gulp.task("default", function(){
-	gulp.watch('css/*.less').on('change', function (event) {
+	gulp.watch(['css/estilos.less', 'css/media-queries.less']).on('change', function (event) {
         gulp.src(event.path)
             .pipe(less().on('error', function (erro) {
                 console.log('Problema na compilação: '+erro.filename);

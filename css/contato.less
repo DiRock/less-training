@@ -1,0 +1,31 @@
+/** Contato **/
+.contato input,
+.contato button {
+  display: block;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contato input,
+textarea {
+  width: 100%;
+  margin-bottom: .8em;
+  padding: 4px 8px;
+  .borda-curvada();
+  border: 2px solid #ccc;
+}
+
+.contato button {
+  margin: 0 auto;
+  background: red(@cor-padrao);
+  border: 0;
+  color: @cor-branca;
+  width: 210px;
+  height: 38px;
+  font-size: @fonte-botao;
+  .borda-curvada();
+  .sombreamento;
+}
