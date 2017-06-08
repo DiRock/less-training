@@ -1,9 +1,8 @@
 @cor-padrao: tomato;
 @cor-auxiliar: #1e2c35;
 @cor-branca: #fff;
-@raio-borda: 1em;
 
-.borda-curvada{
+.borda-curvada(@raio-borda: 1em){
   -webkit-border-radius: @raio-borda;
   -o-border-radius: @raio-borda;
   -moz-border-radius: @raio-borda;
@@ -111,7 +110,7 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  .borda-curvada;
+  .borda-curvada(2.5em);
   .sombreamento;
   font-weight: bold;
 }
@@ -243,7 +242,7 @@ header .container {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  .borda-curvada;
+  .borda-curvada();
   .sombreamento;
   margin-left: 2em;
 }
@@ -327,7 +326,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  .borda-curvada;
+  .borda-curvada();
   border: 2px solid #ccc;
 }
 
@@ -339,7 +338,7 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  .borda-curvada;
+  .borda-curvada();
   .sombreamento;
 }
 
