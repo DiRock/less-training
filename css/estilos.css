@@ -31,25 +31,25 @@ header {
 header .container {
   position: relative;
 }
-.menu-opcoes {
+.menu-principal {
   position: absolute;
   right: 0;
   top: -0.5em;
   font-size: 1.2em;
   font-weight: lighter;
 }
-.menu-opcoes ul {
+.menu-principal ul {
   padding-left: 0;
 }
-.menu-opcoes li {
+.menu-principal li {
   display: inline-block;
   width: 5em;
 }
-.menu-opcoes a {
+.menu-principal a {
   color: white;
   text-decoration: none;
 }
-.menu-opcoes a:hover {
+.menu-principal a:hover {
   text-decoration: underline;
 }
 /** Destaque **/
@@ -358,11 +358,11 @@ footer a {
   background-size: 50px 50px;
 }
 .social a[href*="facebook"] {
-  background-image: url(../imagens/facebook.png);
+  background-image: url("../imagens/facebook.png");
 }
 .social a[href*="twitter"] {
-  background-image: url(../imagens/twitter.png);
+  background-image: url("../imagens/twitter.png");
 }
 .social a[href*="instagram"] {
-  background-image: url(../imagens/instagram.png);
+  background-image: url("../imagens/instagram.png");
 }

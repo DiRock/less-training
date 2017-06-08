@@ -66,30 +66,30 @@ header .container {
   position: relative;
 }
 
-.menu-opcoes {
+.menu-principal {
   position: absolute;
   right: 0;
   top: -.5em;
   font-size: @fonte-botao;
   font-weight: lighter;
-}
 
-.menu-opcoes ul {
-  padding-left: 0;
-}
+  ul {
+    padding-left: 0;
+  }
 
-.menu-opcoes li {
-  display: inline-block;
-  width: 5em;
-}
+  li {
+    display: inline-block;
+    width: 5em;
+  }
 
-.menu-opcoes a {
-  color: white;
-  text-decoration: none;
-}
+  a {
+    color: white;
+    text-decoration: none;
 
-.menu-opcoes a:hover {
-  text-decoration: underline;
+    &:hover {
+    text-decoration: underline;
+    }
+  }
 }
 
 /** Destaque **/
@@ -440,13 +440,13 @@ footer a {
 }
 
 .social a[href*="facebook"] {
-  .imagem-fundo(../imagens/facebook.png);
+  .imagem-fundo("../imagens/facebook.png");
 }
 
 .social a[href*="twitter"] {
-  .imagem-fundo(../imagens/twitter.png);
+  .imagem-fundo("../imagens/twitter.png");
 }
 
 .social a[href*="instagram"] {
-  .imagem-fundo(../imagens/instagram.png);
+  .imagem-fundo("../imagens/instagram.png");
 }
