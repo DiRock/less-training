@@ -10,6 +10,10 @@
   border-radius: @raio-borda;
 }
 
+.sombreamento{
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.8);
+}
+
 /** Geral **/
 body {
   font-family: "Roboto Slab", serif;
@@ -107,9 +111,8 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: @raio-borda;
-  border-radius: @raio-borda;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .borda-curvada;
+  .sombreamento;
   font-weight: bold;
 }
 
@@ -240,9 +243,8 @@ header .container {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: @raio-borda;
-  border-radius: @raio-borda;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .borda-curvada;
+  .sombreamento;
   margin-left: 2em;
 }
 
@@ -325,8 +327,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: @raio-borda;
-  border-radius: @raio-borda;
+  .borda-curvada;
   border: 2px solid #ccc;
 }
 
@@ -338,9 +339,8 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: @raio-borda;
-  border-radius: @raio-borda;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .borda-curvada;
+  .sombreamento;
 }
 
 /** Footer **/
