@@ -356,6 +356,12 @@ td,
 th {
   padding: 0;
 }
+.sombreamento,
+.destaque button,
+.plano button,
+.contato button {
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.8);
+}
 /** Geral **/
 body {
   font-family: "Roboto Slab", serif;
@@ -441,7 +447,6 @@ header .container {
   -o-border-radius: 2.5em;
   -moz-border-radius: 2.5em;
   border-radius: 2.5em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.8);
   font-weight: bold;
 }
 .destaque button:hover {
@@ -552,7 +557,6 @@ header .container {
   -o-border-radius: 1em;
   -moz-border-radius: 1em;
   border-radius: 1em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.8);
   margin-left: 2em;
 }
 .icone-check,
@@ -639,7 +643,6 @@ textarea {
   -o-border-radius: 1em;
   -moz-border-radius: 1em;
   border-radius: 1em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.8);
 }
 /** Footer **/
 footer {
